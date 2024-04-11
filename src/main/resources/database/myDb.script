@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 839
+SET FILES CHECK 1858
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -58,4 +58,8 @@ INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1
 INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',-842852933,'SA','2024-04-03 21:04:38.766733',1,'1')
 INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',-2075238509,'SA','2024-04-03 21:04:38.774733',1,'1')
 INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',-1199294418,'SA','2024-04-03 21:04:38.781733',1,'1')
+INSERT INTO EVENTS VALUES('399a93da-cf50-4d84-b1dc-0e4570dd4a34','RockefsftSeat','RockefsftSeat','rockefsftseat',1000)
 INSERT INTO EVENTS VALUES('d4c6738b-4258-4239-897a-86f8457360fd','RocketSeat','RocketSeat','rocketseat',500)
+INSERT INTO ATTENDEES VALUES('399a93da-cf50-4d84-b1dc-0e4570dd4a34','Raquel Brena','email@email','d4c6738b-4258-4239-897a-86f8457360fd',NULL)
+INSERT INTO ATTENDEES VALUES('8b7bf4eb-60a8-498e-8813-df638f1976d7','test3e','emai3l.teste','d4c6738b-4258-4239-897a-86f8457360fd','2024-04-11 13:23:14.797073')
+INSERT INTO ATTENDEES VALUES('ba6f1ce0-bf30-43f5-bcd7-e6797fded290','teste','email.teste','d4c6738b-4258-4239-897a-86f8457360fd','2024-04-11 13:22:25.476675')
